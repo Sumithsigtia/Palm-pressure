@@ -80,16 +80,26 @@ st.write("This is a predicted pressure using Machine Learning. "
          "If the patient disagrees with the predicted values, further diagnosis can be done, and "
          "it may help in identifying diseases impacting palm pressure.")
 
+# Instructions on Computing BMI
+st.markdown("### BMI Calculation")
+st.write("BMI is calculated as weight (kg) divided by the square of height (m). "
+         "The formula is BMI = weight / (height * height). "
+         "BMI provides an indication of body fat and helps assess health risks associated with weight.")
+
+# BMI Chart Image
+st.markdown("### BMI Chart")
+bmi_chart_image = 'bmi.png'  # Replace with the actual file path or URL for the BMI chart image
+st.image(bmi_chart_image, caption="BMI Chart", use_column_width=True)
+
 # Information about Diseases and Cure
 disease_image = 'disease.png'  # Replace with the actual file path or URL for the BMI chart image
 st.image(disease_image, caption="Palm Impairments", use_column_width=True)
 st.write("1.Carpal Tunnel Syndrome (CTS):"
          "Symptoms: Numbness, tingling, and weakness in the hand due to compression of the median nerve in the wrist."
-         "Treatment: Rest, wrist splints, medications, and in severe cases, surgery."
-         ""
+         "Treatment: Rest, wrist splints, medications, and in severe cases, surgery.<br>"
          "2.Rheumatoid Arthritis (RA):"
          "Symptoms: Joint pain, swelling, and stiffness, often affecting the hands and wrists."
-         "Treatment: Medications, physical therapy, and in some cases, surgery."
+         "Treatment: Medications, physical therapy, and in some cases, surgery.<br>"
          "3.Wrist Arthroplasty:"
          "Description: Surgical procedure involving the replacement of the wrist joint with an artificial joint."
          "Purpose: To relieve pain and improve function, often used in cases of severe arthritis."
@@ -102,14 +112,3 @@ st.write("1.Carpal Tunnel Syndrome (CTS):"
          "6.Frozen Shoulder (Adhesive Capsulitis):"
          "Symptoms: Gradual onset of shoulder pain and stiffness, limiting range of motion."
          "Treatment: Physical therapy, medications, and in some cases, joint distension or surgery.")
-
-# Instructions on Computing BMI
-st.markdown("### BMI Calculation")
-st.write("BMI is calculated as weight (kg) divided by the square of height (m). "
-         "The formula is BMI = weight / (height * height). "
-         "BMI provides an indication of body fat and helps assess health risks associated with weight.")
-
-# BMI Chart Image
-st.markdown("### BMI Chart")
-bmi_chart_image = 'bmi.png'  # Replace with the actual file path or URL for the BMI chart image
-st.image(bmi_chart_image, caption="BMI Chart", use_column_width=True)
