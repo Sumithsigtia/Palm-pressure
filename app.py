@@ -53,10 +53,10 @@ if st.sidebar.button("Predict Pressure"):
 
     predicted_pressure = model.predict(user_data)[0]
 
-    # Display Prediction with larger font size
+    # Display Prediction with larger font size and box
     st.subheader("Predicted Pressure:")
-    st.write(f"****{predicted_pressure:.2f}****")
-
+    st.markdown(f"<div style='font-size:24px; padding: 10px; border: 2px solid #f63366; border-radius: 10px;'>"
+                f"<strong>{predicted_pressure:.2f}</strong></div>", unsafe_allow_html=True)
 
 # Posture Visualization
 st.markdown("### Posture Visualization")
@@ -90,6 +90,7 @@ st.markdown("### BMI Calculation")
 st.write("BMI is calculated as weight (kg) divided by the square of height (m). "
          "The formula is BMI = weight / (height * height). "
          "BMI provides an indication of body fat and helps assess health risks associated with weight.")
+
 # BMI Chart Image
 st.markdown("### BMI Chart")
 bmi_chart_image = 'bmi.png'  # Replace with the actual file path or URL for the BMI chart image
