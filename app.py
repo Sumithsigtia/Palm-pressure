@@ -1,14 +1,8 @@
 import streamlit as st
 import pandas as pd
-import joblib
-from sklearn.ensemble import GradientBoostingRegressor
+import pickle
 
-# Load the model
-model = GradientBoostingRegressor()
-model = joblib.load('gradient_boosting_model.joblib')
-
-# Re-save the model
-joblib.dump(model, 'gradient_boosting_model.joblib')
+model = pickle.load(open('gradient_boosting_model.sav', 'rb'))
 
 
 # Streamlit App
