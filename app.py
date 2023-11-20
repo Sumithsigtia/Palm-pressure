@@ -81,9 +81,9 @@ st.write("This is a predicted pressure using Machine Learning. "
          "it may help in identifying diseases impacting palm pressure.")
 
 # Information about Diseases and Cure
-st.markdown("### Diseases and Cure")
-st.write("1. **Hypertension:** High pressure may indicate hypertension. Consult a doctor for further evaluation."
-         "\n2. **Hypotension:** Low pressure may indicate hypotension. Consult a doctor for further evaluation.")
+disease_image = 'disease.jpg'  # Replace with the actual file path or URL for the BMI chart image
+st.image(disease_image, caption="Palm Impairments", use_column_width=True)
+
 
 # Instructions on Computing BMI
 st.markdown("### BMI Calculation")
