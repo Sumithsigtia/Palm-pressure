@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load('gradient_boosting_model.joblib')
+model = joblib.load('gradient_boosting_model (1).joblib')
 
 
 # Streamlit App
