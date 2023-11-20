@@ -56,6 +56,21 @@ if st.sidebar.button("Predict Pressure"):
     # Display Prediction
     st.subheader("Predicted Pressure:")
     st.write(predicted_pressure)
+    
+# Pictures for Each Posture
+st.markdown("### Posture Visualization")
+posture_images = {
+    '1': 'Posture1.jpg',
+    '2': 'Posture2.jpg',
+    '3': 'Posture3.jpg',
+    '4': 'Posture4.jpg',
+    '5': 'Posture5.jpg',
+    '6': 'Posture6.jpg',
+    '7': 'Posture7.jpg',
+}
+
+selected_posture_image = posture_images.get(posture, 'default_image_url')
+st.image(selected_posture_image, caption=f"Posture {posture}", use_column_width=True)
 
 # Information about ML Prediction and Experimental Diagnosis
 st.markdown("### Information")
@@ -75,19 +90,6 @@ st.write("BMI is calculated as weight (kg) divided by the square of height (m). 
          "The formula is BMI = weight / (height * height). "
          "BMI provides an indication of body fat and helps assess health risks associated with weight.")
 
-# Pictures for Each Posture
-st.markdown("### Posture Visualization")
-posture_images = {
-    '1': 'Posture1.jpg',
-    '2': 'Posture2.jpg',
-    '3': 'Posture3.jpg',
-    '4': 'Posture4.jpg',
-    '5': 'Posture5.jpg',
-    '6': 'Posture6.jpg',
-    '7': 'Posture7.jpg',
-}
 
-selected_posture_image = posture_images.get(posture, 'default_image_url')
-st.image(selected_posture_image, caption=f"Posture {posture}", use_column_width=True)
 
 # Optional: Replace 'PostureX.jpg' with the actual file names for images corresponding to each posture.
