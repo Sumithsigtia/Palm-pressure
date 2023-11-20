@@ -92,6 +92,7 @@ bmi_chart_image = 'bmi.png'  # Replace with the actual file path or URL for the 
 st.image(bmi_chart_image, caption="BMI Chart", use_column_width=True)
 
 # Information about Diseases and Cure
+st.markdown("### Diseases and Cure")
 disease_image = 'disease.png'  # Replace with the actual file path or URL for the BMI chart image
 st.image(disease_image, caption="Palm Impairments", use_column_width=True)
 st.markdown("""
