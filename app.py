@@ -8,7 +8,7 @@ model = pickle.load(open('gradient_boosting_model.sav', 'rb'))
 # Streamlit App
 st.title("Palm Pressure Prediction App")
 
-# User Input
+# User Input Sidebar
 st.sidebar.header("User Input")
 
 # Posture Selection with Descriptions
@@ -78,16 +78,16 @@ st.write("BMI is calculated as weight (kg) divided by the square of height (m). 
 # Pictures for Each Posture
 st.markdown("### Posture Visualization")
 posture_images = {
-    '1': 'posture1.jpg',
-    '2': 'posture2.jpg',
-    '3': 'posture3.jpg',
-    '4': 'posture4.jpg',
-    '5': 'posture5.jpg',
-    '6': 'posture6.jpg',
-    '7': 'posture7.jpg',
+    '1': 'Posture1.jpg',
+    '2': 'Posture2.jpg',
+    '3': 'Posture3.jpg',
+    '4': 'Posture4.jpg',
+    '5': 'Posture5.jpg',
+    '6': 'Posture6.jpg',
+    '7': 'Posture7.jpg',
 }
 
 selected_posture_image = posture_images.get(posture, 'default_image_url')
 st.image(selected_posture_image, caption=f"Posture {posture}", use_column_width=True)
 
-# Optional: You can replace 'image_url_for_posture_X' with actual URLs for images corresponding to each posture.
+# Optional: Replace 'PostureX.jpg' with the actual file names for images corresponding to each posture.
