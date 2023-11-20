@@ -91,6 +91,6 @@ st.write("BMI is calculated as weight (kg) divided by the square of height (m). 
          "The formula is BMI = weight / (height * height). "
          "BMI provides an indication of body fat and helps assess health risks associated with weight.")
 # BMI Chart Image
-st.sidebar.markdown("### BMI Chart")
+st.markdown("### BMI Chart")
 bmi_chart_image = 'bmi.png'  # Replace with the actual file path or URL for the BMI chart image
-st.sidebar.image(bmi_chart_image, caption="BMI Chart", use_column_width=True)
+st.image(bmi_chart_image, caption="BMI Chart", use_column_width=True)
