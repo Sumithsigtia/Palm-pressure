@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-import joblib
+import pickle
 
-model = joblib.load('gradient_boosting_model (1).joblib')
+model = pickle.load(open('gradient_boosting_model.sav', 'rb'))
 
 
 # Streamlit App
