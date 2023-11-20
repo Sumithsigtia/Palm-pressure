@@ -55,7 +55,7 @@ if st.sidebar.button("Predict Pressure"):
 
     # Display Prediction with larger font size
     st.subheader("Predicted Pressure:")
-    st.write(f"*{predicted_pressure:.2f}*")
+    st.write(f"***{predicted_pressure:.2f}***")
 
 
 # Posture Visualization
