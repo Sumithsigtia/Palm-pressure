@@ -1,9 +1,15 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from sklearn.ensemble import GradientBoostingRegressor
 
-# Load the Gradient Boosting Regressor model
+# Load the model
+model = GradientBoostingRegressor()
 model = joblib.load('gradient_boosting_model.joblib')
+
+# Re-save the model
+joblib.dump(model, 'gradient_boosting_model.joblib')
+
 
 # Streamlit App
 st.title("Palm Pressure Prediction App")
